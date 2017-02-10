@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sketch.js - 3 Sweep</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src='sketch.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'/>
+
+    <style type='text/css'>
+      body { font-family: "Open Sans", sans-serif; color: #444; }
+      h1, h2, h3, h4 { font-family: Yellowtail; font-weight: normal; color: #06a; }
+
+      #wrapper { width: 800px; margin: 0 auto; }
+
+      header { text-align: center; }
+      header h1 { font-size: 46px; text-align: center; margin: 15px 10px; }
+
+      article h1 { font-size: 26px; margin: 0 0 15px; }
+
+      article canvas {
+        width: 1130px;
+        height: 1800px;
+        border: 1px solid #ccc;
+      }
+
+      pre.source {
+        background: #e5eeee;
+        padding: 10px 20px;
+        width: 760px;
+        overflow-x: auto;
+        border: 1px solid #acc;
+      }
+
+      code { background: #cff; }
+
+      .tools { margin-bottom: 10px; }
+      .tools a {
+        border: 1px solid black; height: 30px; line-height: 30px; padding: 0 10px; vertical-align: middle; text-align: center; text-decoration: none; display: inline-block; color: black; font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='wrapper'>
+
+    <article class='example'>
+        <h1>3 Sweep on Image</h1>
+                
+        <div class='demo' id='colors_demo'>
+          <div class='tools'>
+            <a href='#colors_sketch' data-download='png' style='float: right; width: 100px;'>Download</a>
+            <a href='#colors_sketch' data-tool='marker'>Marker</a>
+            <a href='#colors_sketch' data-tool='eraser'>Eraser</a>
+          </div>
+          <canvas id='colors_sketch' width='1130' height='1800' style='background: url(../images/Sample1.png) no-repeat center center;'></canvas>
+          <script type='text/javascript'>
+            $(function() {
+              $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+                $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
+              });
+              $.each([3, 5, 10, 15], function() {
+                $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+              });
+              $('#colors_sketch').sketch();
+            });
+          </script>
+        </div>
+      </article>
+<!-- 
+      <article class='example' id='tools_demo'>
+        <h1>Draw on image</h1>
+        
+        <div class='demo'>
+          <div class='tools'>
+            <a href='#tools_sketch' data-tool='marker'>Marker</a>
+            <a href='#tools_sketch' data-tool='eraser'>Eraser</a>
+          </div>
+          <canvas id='tools_sketch' width='1130' height='1800' style='background: url(../images/2ext.png) no-repeat center center;'></canvas>
+          <script type='text/javascript'>
+            $(function() {
+              // var ctx = document.getElementById('tools_sketch');
+              // if (ctx.getContext) {
+              //   ctx = ctx.getContext('2d');
+              //   var img1 = new Image();
+              //   img1.src = '../images/Sample1.png';
+              // }
+              $('#tools_sketch').sketch({defaultColor: "#f043"});
+            });
+          </script>
+        </div>
+      </article> -->
+
+
+    </div>
+    <script type='text/javascript'>
+      var escapeHTML = function(s) {
+        return s
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      $('article.example').each(function() {
+        $(this).append("<pre class='source'></pre>");
+        var html = $(this).find("div.demo").html().replace(/          /g,"");
+        $(this).find("pre.source").html(escapeHTML(html));
+      });
+    </script>
+  </body>
+</html>
+
