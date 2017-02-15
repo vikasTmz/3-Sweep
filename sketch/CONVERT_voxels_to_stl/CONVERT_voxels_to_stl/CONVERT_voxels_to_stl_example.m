@@ -14,7 +14,7 @@ load example.mat
 %Plot the original data:
 figure;
 imagesc(squeeze(sum(gridINPUT,3)));
-colormap(gray);
+% colormap(gray);
 axis equal tight
 
 
