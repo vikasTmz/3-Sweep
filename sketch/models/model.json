@@ -1,0 +1,75 @@
+{
+	"metadata": {
+		"version": 4.4,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"geometries": [
+		{
+			"uuid": "4BD561DE-AE7B-48B4-967D-534AB823DCE0",
+			"type": "CylinderBufferGeometry",
+			"radiusTop": 5,
+			"radiusBottom": 3.54,
+			"height": 2,
+			"radialSegments": 32,
+			"heightSegments": 1,
+			"openEnded": false
+		},
+		{
+			"uuid": "2975EFFC-D79A-48E0-A22A-BB90A5089C33",
+			"type": "CylinderBufferGeometry",
+			"radiusTop": 2.76,
+			"radiusBottom": 1,
+			"height": 2,
+			"radialSegments": 32,
+			"heightSegments": 1,
+			"openEnded": false
+		}],
+	"materials": [
+		{
+			"uuid": "2635FF7B-2D62-4FD7-9D1E-076CA8F2DEA6",
+			"type": "MeshStandardMaterial",
+			"color": 16777215,
+			"roughness": 0.5,
+			"metalness": 0.5,
+			"emissive": 9975155,
+			"blending": 2,
+			"side": 2,
+			"vertexColors": 2,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"skinning": false,
+			"morphTargets": false
+		},
+		{
+			"uuid": "BBABCE9A-4E45-48D3-BD37-4A0278B94594",
+			"type": "MeshStandardMaterial",
+			"color": 16777215,
+			"roughness": 0.5,
+			"metalness": 0.5,
+			"emissive": 5763072,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"skinning": false,
+			"morphTargets": false
+		}],
+	"object": {
+		"uuid": "5B7C319F-F870-46F5-B6F2-494FFCDAAD6C",
+		"type": "Mesh",
+		"name": "Cylinder 1",
+		"matrix": [1,0,0,0,0,3.217131,0,0,0,0,1,0,5.216625,3.020838,2.704741,1],
+		"geometry": "4BD561DE-AE7B-48B4-967D-534AB823DCE0",
+		"material": "2635FF7B-2D62-4FD7-9D1E-076CA8F2DEA6",
+		"children": [
+			{
+				"uuid": "82A49653-97E1-42D8-865E-281BD9C320D9",
+				"type": "Mesh",
+				"name": "Cylinder 2",
+				"matrix": [1,0,0,0,0,1.271889,0,0,0,0,1,0,0.050479,0.945412,-0.002168,1],
+				"geometry": "2975EFFC-D79A-48E0-A22A-BB90A5089C33",
+				"material": "BBABCE9A-4E45-48D3-BD37-4A0278B94594"
+			}]
+	}
+}

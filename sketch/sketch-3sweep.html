@@ -6,9 +6,10 @@
     <script src='sketch.js'></script>
     <link href='http://fonts.googleapis.com/css?family=Yellowtail|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'/>
     <script src="build/three.js"></script>
-
+    <script src="js/STLLoader.js"></script>
     <script src="js/Detector.js"></script>
     <script src="js/stats.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
 
     <style type='text/css'>
       body { font-family: "Open Sans", sans-serif; color: #444; }
@@ -22,8 +23,8 @@
       article h1 { font-size: 26px; margin: 0 0 15px; }
 
       article canvas {
-        width: 1130px;
-        height: 1800px;
+        width: 385px;
+        height: 498px;
         border: 1px solid #ccc;
       }
 
@@ -34,7 +35,9 @@
         overflow-x: auto;
         border: 1px solid #acc;
       }
-
+    .threejs_demo {
+      position: center; 
+    }
       code { background: #cff; }
      
       #info {
@@ -63,7 +66,7 @@
             <a href='#colors_sketch' data-tool='marker'>Marker</a>
             <a href='#colors_sketch' data-tool='eraser'>Eraser</a>
           </div>
-          <canvas id='colors_sketch' width='1130' height='1800' style='background: url(../images/Sample1.png) no-repeat center center;'></canvas>
+          <canvas id='colors_sketch' width='385' height='498' style='background: url(../images/Sample1.png) no-repeat center center;'></canvas>
           <script type='text/javascript'>
             $(function() {
               $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
@@ -78,7 +81,15 @@
         </div>
       </article>
 
-      <article class='example'>
+      <article class='threejs_demo'>
+        <button onclick="createModel()">Generate!</button>
+        <script>
+        function createModel() {
+
+            // document.getElementById("demo").innerHTML = "Hello World";
+        }
+        </script>
+
         <div id="info">
           OUTPUT<br/>
         </div>
@@ -89,7 +100,9 @@
         var camera, scene, renderer;
 
         var mouseX = 0, mouseY = 0;
-
+        // window.innerWidth = 2000;
+        // window.innerHeight = 1500;
+        // console.log(window.innerWidth,window.innerHeight)
         var windowHalfX = window.innerWidth / 2;
         var windowHalfY = window.innerHeight / 2;
 
@@ -117,11 +130,66 @@
           directionalLight.position.set( 0, 0, 1 ).normalize();
           scene.add( directionalLight );
 
+
+          //OBJ loader Start
+          // var manager = new THREE.LoadingManager();
+          // manager.onProgress = function ( item, loaded, total ) {
+          //   console.log( item, loaded, total );
+          // };
+          // var texture = new THREE.Texture();
+          // var onProgress = function ( xhr ) {
+          //   if ( xhr.lengthComputable ) {
+          //     var percentComplete = xhr.loaded / xhr.total * 100;
+          //     console.log( Math.round(percentComplete, 2) + '% downloaded' );
+          //   }
+          // };
+          // var onError = function ( xhr ) {
+          // };
+          // var loader = new THREE.ImageLoader( manager );
+          // loader.load( '', function ( image ) {
+          //   texture.image = image;
+          //   texture.needsUpdate = true;
+          // } );
+          // // model
+          // var loader = new THREE.OBJLoader( manager );
+          // loader.load( './models/male.obj', function ( object ) {
+          //   object.traverse( function ( child ) {
+          //     if ( child instanceof THREE.Mesh ) {
+          //       child.material.map = texture;
+          //     }
+          //   } );
+          //   object.position.y = - 35;
+          //   object.rotation.y = 0.25*Math.PI;
+          //   object.name = "Model";
+          //   scene.add( object );
+          // }, onProgress, onError );
+          //OBJ loader End
+
+
+          //STL Loader Begin
+          var loader = new THREE.STLLoader();
+            loader.load( './models/matlabgen.stl', function ( geometry ) {
+
+              var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
+              var mesh = new THREE.Mesh( geometry, material );
+
+              mesh.position.set( 0, - 0.25, 0.6 );
+              mesh.rotation.set( 0, - Math.PI / 2, 0 );
+              mesh.scale.set( 0.5, 0.5, 0.5 );
+
+              mesh.castShadow = true;
+              mesh.receiveShadow = true;
+
+              scene.add( mesh );
+
+            } );
+          // STL Loader End
+
           // BEGIN Clara.io JSON loader code
-          var objectLoader = new THREE.ObjectLoader();
-          objectLoader.load("models/teapot-claraio.json", function ( obj ) {
-            scene.add( obj );
-          } );
+          // var objectLoader = new THREE.ObjectLoader();
+          // objectLoader.load("models/model.json", function ( obj ) {
+          //   scene.add( obj );
+          // } );
           // END Clara.io JSON loader code
 
           renderer = new THREE.WebGLRenderer();
@@ -186,7 +254,7 @@
             <a href='#tools_sketch' data-tool='marker'>Marker</a>
             <a href='#tools_sketch' data-tool='eraser'>Eraser</a>
           </div>
-          <canvas id='tools_sketch' width='1130' height='1800' style='background: url(../images/2ext.png) no-repeat center center;'></canvas>
+          <canvas id='tools_sketch' width='385' height='498' style='background: url(../images/2ext.png) no-repeat center center;'></canvas>
           <script type='text/javascript'>
             $(function() {
               // var ctx = document.getElementById('tools_sketch');
@@ -219,4 +287,20 @@
     </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

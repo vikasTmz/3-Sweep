@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="primitivedrawing.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -36,15 +36,6 @@
        x2="568.57144"
        y2="290.21933"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3755"
-       id="linearGradient3989"
-       gradientUnits="userSpaceOnUse"
-       x1="152.85715"
-       y1="290.21933"
-       x2="568.57144"
-       y2="290.21933" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3993">
@@ -64,15 +55,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="132.40174"
-     inkscape:cy="1086.0394"
+     inkscape:zoom="0.69999999"
+     inkscape:cx="1296.3925"
+     inkscape:cy="220.13884"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="1366"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -105,41 +96,41 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.55325556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1085.19,-404.92551 c 0,0 -86.16648,300.6669 207.4425,746.00332 293.6092,445.33643 0,735.15869 0,735.15869"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.8030507px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1076.5705,711.0638 c 0,0 -29.5535,86.71885 71.1487,215.16354 100.7022,128.44466 0,212.03566 0,212.03566"
        id="path3817"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/vikas/Documents/3-Sweep/Sample1.png"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:connector-curvature="0"
        id="path3971"
-       d="m 2180.628,-405.0963 c 0,0 86.1666,300.6669 -207.4424,746.00332 -293.6091,445.33642 0,735.15848 0,735.15848"
-       style="fill:none;stroke:#000000;stroke-width:2.55325556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="/home/vikas/Documents/3-Sweep/Sample1.png"
+       d="m 1452.2843,711.01454 c 0,0 29.5535,86.71885 -71.1486,215.16354 -100.7022,128.44462 0,212.03572 0,212.03572"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.8030507px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.55325556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1292.3361,1075.45 c 0,0 393.3608,194.8348 680.3826,0.4417"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.8030507px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1147.6176,1138.0362 c 0,0 134.9151,56.1946 233.358,0.1274"
        id="path3977"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/vikas/Documents/3-Sweep/Sample1.png"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/home/vikas/Documents/3-Sweep/Sample1.png"
-       transform="matrix(2.6349532,0,0,2.4740913,682.46592,-1120.7301)"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
+       transform="matrix(0.90373759,0,0,0.7135816,938.44395,504.61022)"
        d="m 568.57144,290.21933 a 207.85715,65 0 1 1 -415.71429,0 207.85715,65 0 1 1 415.71429,0 z"
        sodipodi:ry="65"
        sodipodi:rx="207.85715"
        sodipodi:cy="290.21933"
        sodipodi:cx="360.71429"
        id="path3987"
-       style="fill:none;stroke:url(#linearGradient3989)"
+       style="fill:none;stroke:#ff00ff;stroke-opacity:1"
        sodipodi:type="arc"
        clip-path="url(#clipPath3993)" />
   </g>
