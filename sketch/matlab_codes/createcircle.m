@@ -1,5 +1,4 @@
 function [C] = createcircle(dsize,r)
-    dsize = cSize;r=cSize/2;
     imageSizeX = dsize;
     imageSizeY = dsize;
     [columnsInImage, rowsInImage] = meshgrid(1:imageSizeX, 1:imageSizeY);
