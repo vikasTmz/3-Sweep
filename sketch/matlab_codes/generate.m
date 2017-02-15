@@ -8,8 +8,8 @@ addpath(genpath('../CONVERT_voxels_to_stl/CONVERT_voxels_to_stl'))
 
 
 imgE = imread('../../images/Sample1.png');
-imgSwp = imread('../../images/Sample1sweep.png');
-imgSwp = imresize(imgSwp,[size(imgE,1) size(imgE,2)]);%[29 2] [29 64]  ... [2 6] [52 6]
+% imgSwp = imread('../../images/Sample1sweep.png');
+% imgSwp = imresize(imgSwp,[size(imgE,1) size(imgE,2)]);%[29 2] [29 64]  ... [2 6] [52 6]
 
 se = strel('disk',2);
 imgbw = imclose(rgb2gray(imgE),se);
@@ -24,14 +24,14 @@ for k=1:size(boundary,1)
 end
 
 diaC = [];
-for i=6:62
+for i=6:61
     row = A(i,:);
     indx = find(row);
     diaC = [diaC (indx(2)-indx(1))]; 
 end
 cSize = max(diaC);
 
-model = repmat(1, [cSize cSize (62-6)]);
+model = repmat(1, [cSize cSize (61-6)]);
 for i=1:size(diaC,2)
     circle = createcircle(cSize,diaC(1,i)/2);
 %     circle = uint8(circle).*255;
@@ -44,9 +44,9 @@ for i=1:size(diaC,2)
 end
 
 
-gridX = [-192:191];
-gridY = [-192:191];
-gridZ = [-217:216];
+gridX = [-size(model,1)/2:size(model,1)/2-1];
+gridY = [-size(model,2)/2:size(model,2)/2-1];
+gridZ = [-size(model,3)/2:size(model,3)/2-1];
 [faces,vertices] = CONVERT_voxels_to_stl('../models/first.stl',model,gridX,gridY,gridZ,'ascii');
 %Plot the original data:
 figure;
