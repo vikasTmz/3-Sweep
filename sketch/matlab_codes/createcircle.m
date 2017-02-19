@@ -7,7 +7,7 @@ function [C] = createcircle(dsize,r)
     centerY = imageSizeY/2;
     radius = r;
     circlePixels = abs((rowsInImage - centerY).^2 ...
-        + (columnsInImage - centerX).^2 - radius.^2) <= 50;
+        + (columnsInImage - centerX).^2) <= radius.^2;
     % circlePixels is a 2D "logical" array.
     % Now, display it.
     C = circlePixels;

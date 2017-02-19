@@ -55,9 +55,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="1069.3905"
-     inkscape:cy="-67.703065"
+     inkscape:zoom="4"
+     inkscape:cx="375.42037"
+     inkscape:cy="195.529"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,7 +97,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#ff00ff;stroke-width:0.10696596px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1072.7639,1099.0086 c 0,0 4.0801,11.1445 -9.8223,27.6514 -13.9025,16.5071 0,27.2495 0,27.2495"
+       d="m 458.99522,855.76387 c 0,0 4.0801,11.1445 -9.8223,27.6514 -13.9025,16.5071 0,27.2495 0,27.2495"
        id="path3817"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
@@ -106,7 +106,7 @@
     <path
        inkscape:connector-curvature="0"
        id="path3971"
-       d="m 1124.6337,1099.0179 c 0,0 -4.0804,11.1445 9.8224,27.6515 13.9026,16.507 0,27.2494 0,27.2494"
+       d="m 510.86502,855.77317 c 0,0 -4.0804,11.1445 9.8224,27.6515 13.9026,16.507 0,27.2494 0,27.2494"
        style="fill:none;stroke:#ff00ff;stroke-width:0.10696596px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
        inkscape:export-xdpi="90"
@@ -115,7 +115,7 @@
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
-       transform="matrix(0.12476686,0,0,0.09170482,1053.694,1072.4488)"
+       transform="matrix(0.12476686,0,0,0.09170482,439.92532,829.20407)"
        d="m 568.57144,290.21933 a 207.85715,65 0 1 1 -415.71429,0 207.85715,65 0 1 1 415.71429,0 z"
        sodipodi:ry="65"
        sodipodi:rx="207.85715"
@@ -126,11 +126,51 @@
        sodipodi:type="arc"
        clip-path="url(#clipPath3993)" />
     <path
-       style="fill:none;stroke:#ff00ff;stroke-width:0.05017518000000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1062.8907,1153.9029 71.6155,10e-5"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.05017518px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 449.12202,910.65817 71.6155,10e-5"
        id="path2992"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.729608px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 425.61984,753.62943 -21.06508,0 c 0,0 17.38859,23.94081 0,46.03995 l 20.81057,0"
+       id="path3001"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/temp1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3003"
+       d="m 404.55476,753.62943 21.06508,0 c 0,0 -17.38863,23.94081 0,46.03995"
+       style="fill:none;stroke:#00ff00;stroke-width:0.729608px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/temp1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.729608px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 404.55476,753.62943 21.06508,0 c 0,0 -17.38863,23.94081 0,46.03995"
+       id="path3005"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/temp1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.93493002999999997px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 412.0335,849.37025 -26.67788,0 c 0,0 11.49655,8.71029 6.63264,14.82604 -4.86395,6.11574 -17.687,5.55976 -10.02265,16.12334 7.66437,10.56355 8.69612,12.60212 2.50567,19.27386 -6.19047,6.67171 -5.60089,10.74888 -5.60089,10.74888 l 40.72476,0"
+       id="path2995"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path2997"
+       d="m 386.35813,849.32095 26.37725,0 c 0,0 -11.36699,8.71115 -6.55788,14.82749 4.80912,6.11633 17.48769,5.5603 9.90969,16.1249 -7.57799,10.56458 -8.59811,12.60336 -2.47742,19.27571 6.1207,6.67238 5.53778,10.74993 5.53778,10.74993"
+       style="fill:none;stroke:#00ff00;stroke-width:0.92969263000000002px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/vikas/Documents/3-Sweep/images/Sample3.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
